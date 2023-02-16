@@ -1,8 +1,8 @@
 #This program calculates and displays travel expenses
 #2-16-2023
 #CTI-110 P1HW2 - Travel Expense
-#Anthony Cameron
-
+#Robert Watts
+#
 print("This program calculates and displays travel expenses")
 print()
 budget = float(input("Enter budget: "))

@@ -11,4 +11,6 @@ scale = 0
 scores = int(input('How many scores do you want to enter?'))
 
 while scales != 0
-    if 
+    if
+   
+# testing github addons

@@ -10,5 +10,10 @@ scale = 0
 
 scores = int(input('How many scores do you want to enter?'))
 
-while scales != 0
-    if 
+if scores <= 0:
+    print("At least one score must be entered")
+else:
+    while scores >= scores:
+        scores = scores - 1
+        input("Enter score #", scores)
+    

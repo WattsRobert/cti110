@@ -2,66 +2,45 @@
 # 5-2-2023
 # CTI-110 P5HW - Math Quiz
 # Robert Watts
-#
+# (In Class version of program)
 
-##### Defining functions and variables
-# variables
-option = 0
+import random
 
-# adding function
-def adding():
-    print('adding test')
 
-# subtraction function
-def subtracting():
-    print('subtracting test')
+def main():
+    menu()
 
-# Menu function (not being used rn)
-def Math_Quiz():
-    print()
-    print("MAIN MENU")
-    print("-" * 30)
-    print("1. Adding Random Numbers")
-    print("2. Subtracting Random Numbers")
-    print("3. Exit")
-    print()
-    option = input(int("Please choose one of the menu options: "))
-
-##### Program starts
-print("Welcome to Math Quiz!")
-print()
-print("MAIN MENU")
-print("-" * 30)
-print("1. Adding Random Numbers")
-print("2. Subtracting Random Numbers")
-print("3. Exit")
-print()
-option = int(input("Please choose one of the menu options: "))
-
-##### Loops program until option 3 is entered
-while option != 3:
-    
-    if option == 1:
-        print('test 1')
-    elif option == 2:
-        print('test 2')
-    elif option > 3 or option < 1:
+def menu():
+    choice = 0
+    while choice != 3:  
+        print("Welcome to the Math Quiz")
         print()
-        print("Not an option, please input a number presented below")
-    else:
+        print("Main Menu")
+        print("-" * 25)
+        print("1. Adding Numbers")
+        print("2. Subtracting Numbers")
+        print("3. Exit")
         print()
+        print("Please choose one of the menu options: ", end='')
+        choice = int(input())
 
-    print()
-    print("MAIN MENU")
-    print("-" * 30)
-    print("1. Adding Random Numbers")
-    print("2. Subtracting Random Numbers")
-    print("3. Exit")
-    print()
-    option = int(input("Please choose one of the menu options: "))
+        if choice == 1:
+            add()
+            print("")
+        elif choice == 2:
+            subtract()
+            print("")
+        elif choice == 3:
+            print("exit")
+            print("The program has ended")
+        else:
+            print("bad choice, Try Again!!")
 
-##### The end of the program
-print("Thank you for playing...")
-print("Bye!!")
+def add():
+    print("Addition Function")
 
-h
+def subtract():
+    print("Subtraction Function")
+
+main()
+

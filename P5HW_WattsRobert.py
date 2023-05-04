@@ -37,10 +37,72 @@ def menu():
             print("bad choice, Try Again!!")
 
 def add():
+    finished = 0
+    guess = 0
+    attempts = 0
+    
     print("Addition Function")
-
+    num1 = random.randint(1,10)
+    num2 = random.randint(1,10)
+    answer = num1 + num2
+    print(' ',num1)
+    print("+", num2)
+    print("Enter answer: ")
+    guess = int(input())
+    
+    while finished != 1:
+        if guess < answer:
+            attempts += 1
+            print("Sorry, guess is too low")
+            print()
+            print("Try again: ",end='')
+            guess = int(input())
+        elif guess > answer:
+            attempts += 1
+            print("Sorry, guess is too high")
+            print()
+            print("Try again: ",end='')
+            guess = int(input())
+        else:
+            attempts += 1
+            print("Congrats!! Your guess is correct")
+            print("Number of guess: ", attempts)
+            print()
+            finished = 1
+    
 def subtract():
+    finished = 0
+    guess = 0
+    attempts = 0
+    
     print("Subtraction Function")
-
+    num1 = random.randint(1,10)
+    num2 = random.randint(1,10)
+    answer = num1 - num2
+    print(' ',num1)
+    print("-", num2)
+    print("Enter answer: ")
+    guess = int(input())
+    
+    while finished != 1:
+        if guess < answer:
+            attempts += 1
+            print("Sorry, guess is too low")
+            print()
+            print("Try again: ",end='')
+            guess = int(input())
+        elif guess > answer:
+            attempts += 1
+            print("Sorry, guess is too high")
+            print()
+            print("Try again: ",end='')
+            guess = int(input())
+        else:
+            attempts += 1
+            print("Congrats!! Your guess is correct")
+            print("Number of guess: ", attempts)
+            print()
+            finished = 1
+    
 main()
 
